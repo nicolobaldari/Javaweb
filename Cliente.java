@@ -1,36 +1,45 @@
-class Cliente {
-    private String nome;
-    private String email;
-    private String id;
+public class Cliente 
+{
+   // Attributi
+   private int id;
+   private String nome;
+   private String email;
 
-    public Cliente(String nome, String email, String id){
-        this.nome=nome;
-        this.email=email;
-        this.id=id;
-    }
+   // Costruttore
+   public Cliente(int id, String nome, String email) 
+   {
+      this.id = id;
+      this.nome = nome;
+      this.email = email;
+   }
 
-    public String getNome(){
-        return nome;
-    }
+   public int getId() 
+   {
+      return id;
+   }
 
-      public String getEmail(){
-        return email;
-    }
+   public String getNome() 
+   {
+      return nome;
+   }
 
-    public String getId(){
-        return id;
-    }
+   public String getEmail() 
+   {
+      return email;
+   }
 
-    public void setNome(){
-        this.nome=nome;
-    }
+   public void setId(int id) 
+   {
+      this.id = id;
+   }
 
-    public void setEmail(){
-        this.email=email;
-    }
+   public void setNome(String nome) 
+   {
+      this.nome = nome;
+   }
 
-    public void setId(){
-        this.id=id;
-    }
-    
+   public void setEmail(String email) 
+   {
+      this.email = email;
+   }
 }
